@@ -31,6 +31,7 @@ function writePassword() {
                     retVal += upperCase1.charAt(Math.floor(Math.random() * n));
                 }
                 return retVal;
+                
             }
             
             //  Setting up numbers in password
