@@ -22,7 +22,7 @@ function writePassword() {
             charset4: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"$%&()=?*#",
             charset5: "abcdefghijklmnopqrstuvwxyz"
             };
-
+            //  Setting up Uppercase password
             var upperCase = confirm('Do you want Uppercase letters: click ok or cancel');
             if (upperCase == true) {
                 var upperCase1 = char.charset1;
@@ -33,7 +33,7 @@ function writePassword() {
                 return retVal;
             }
             
-
+            //  Setting up numbers in password
             else {
                 var numbers = confirm('Do you want Numbers: click ok or cancel');
                 if (numbers == true) {
@@ -44,6 +44,7 @@ function writePassword() {
                     }
                     return retVal1;
                 }
+                //  Setting up SpecailCharacters in password
                 else {
                 var specialChar = confirm('Do you want SpecialChr: click ok or cancel');
                 if (specialChar == true) {
@@ -54,6 +55,7 @@ function writePassword() {
                     }
                     return retVal2;
                 }
+                //  Setting up All the Characters in password
                 else {
                 var allchr = confirm('Do you want MostSecurePassword: click ok or cancel');
                 if (allchr == true) {
@@ -64,6 +66,7 @@ function writePassword() {
                     }
                     return retVal3;
                 }
+                // Seting up lowercase Password
                 else
                     var lowerLetter = char.charset5;
                     retVal4 = ""
